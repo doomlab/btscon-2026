@@ -1,0 +1,4 @@
+- source: zenodo.qmd
+  quarto-pub:
+    - id: a9e7276f-58c3-445a-b7aa-7ffbdcc37e68
+      url: https://doomlab.quarto.pub/archive-it-with-zenodo
