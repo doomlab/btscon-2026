@@ -40,10 +40,7 @@ Roughly 55 minutes of content with 30 minutes for Q&A. If demos run long, cut th
 - Accepts any research output: data, code, slides, posters, protocols, preprints
 - Up to 50 GB and 100 files per record
 - Every record gets a DOI
-
-::: {.callout-box}
-[zenodo.org](https://zenodo.org/): log in with ORCID, GitHub, or an email account
-:::
+- Log in at [zenodo.org](https://zenodo.org/) with ORCID, GitHub, or an email account
 
 ::: notes
 Point out that you can sign in with ORCID or GitHub, which saves creating yet another account. A one-time increase to 200 GB per record can be requested if needed.
@@ -117,9 +114,7 @@ Files open up automatically on a date you pick
 :::
 ::::
 
-::: {.callout-box}
 The description is always public, even when the files aren't.
-:::
 
 ::: notes
 Restricted is useful for sensitive data in multi-site projects: the record is findable and citable, but you control who gets the files. Pick a license too (e.g., CC-BY 4.0 for data and materials, MIT for code).
@@ -127,15 +122,11 @@ Restricted is useful for sensitive data in multi-site projects: the record is fi
 
 ## Practice First: The Sandbox
 
-[sandbox.zenodo.org](https://sandbox.zenodo.org/)
-
-- A full copy of Zenodo just for testing
+- [sandbox.zenodo.org](https://sandbox.zenodo.org/) is a full copy of Zenodo just for testing
 - Separate account; nothing there is permanent
 - DOIs from the sandbox are not real
 
-::: {.callout-box}
 Everything I demo today happens in the sandbox. Do your first try there, too!
-:::
 
 # Route 1: Upload Directly {background-color="#1f3a5f"}
 
@@ -226,9 +217,7 @@ Releases were covered in the GitHub pre-conference workshop (recording: youtu.be
 :::
 :::::
 
-::: {.callout-box}
 **Back in Zenodo:** wait a few minutes, then find your new DOI on the GitHub page.
-:::
 
 ::: notes
 The repo has to be switched on before you publish the release; releases made earlier won't be archived. Only published releases count, not drafts.
