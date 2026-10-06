@@ -1,0 +1,4 @@
+- source: hackmd.qmd
+  quarto-pub:
+    - id: 5a8eb7ad-4093-4cfd-941d-8c489ad8ccd0
+      url: https://doomlab.quarto.pub/beyond-google-docs

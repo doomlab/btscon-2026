@@ -142,13 +142,11 @@ Answers the working group's question "can't do private stuff without paying?": p
 
 ## Live Demo
 
-[TODO: demo steps]{.todo}
-
 1. Create a note and invite a collaborator
 2. Set read/write permissions
 3. Add a comment and a table
 4. Look at version history
-5. Push to GitHub
+5. Push to GitHub (if connected)
 
 # Alternatives {background-color="#1f3a5f"}
 
@@ -192,5 +190,3 @@ Rule of thumb: pick the tool your least technical collaborator can use.
 - Sign up: [hackmd.io](https://hackmd.io/)
 - Add a comment to our workflow map: [hackmd.io/K01UHojtQwa_f2H8eOCkqA](https://hackmd.io/K01UHojtQwa_f2H8eOCkqA)
 - Tell us what your team uses, and what you wish existed
-
-[TODO: discussion questions / Q&A]{.todo}
