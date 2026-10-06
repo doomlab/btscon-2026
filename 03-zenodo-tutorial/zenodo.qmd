@@ -154,13 +154,11 @@ Restricted is useful for sensitive data in multi-site projects: the record is fi
 - Separate account; nothing there is permanent
 - DOIs from the sandbox are not real
 
-Everything I demo today happens in the sandbox. Do your first try there, too!
-
 # Route 1: Upload Directly {background-color="#1f3a5f"}
 
 ## Uploading Files, Step by Step
 
-1. Click New upload
+1. Go to My dashboard (top menu), then click New upload
 2. Drag in your files
 3. Answer "Do you already have a DOI?" → No (Zenodo reserves one for you)
 4. Fill in the description:
@@ -179,7 +177,7 @@ Warn the audience: once you publish, you can't swap the files. Double-check befo
 [TODO: demo files to upload, e.g., a study protocol PDF and a data dictionary]{.todo}
 
 1. Log in to the sandbox
-2. Create a new upload and add the files
+2. Go to My dashboard → New upload, and add the files
 3. Add creators with ORCIDs
 4. Publish and look at the DOI
 5. Make a new version of the record
