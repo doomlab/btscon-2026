@@ -2,7 +2,7 @@
 title: "Archive It with Zenodo"
 subtitle: "DOIs for your data, materials, and code (with GitHub releases)"
 author: "Erin M. Buchanan"
-date: "October 6, 2026 · 16:30–17:55 UTC"
+date: "October 6, 2026"
 format:
   revealjs:
     theme: [default, btscon.scss]
@@ -15,16 +15,12 @@ format:
 
 ## Plan for Today
 
-::: {.agenda}
-| Time | What |
-|------|------|
-| 16:30 | Why archive, and what Zenodo is |
-| 16:40 | Key ideas: records, DOIs, versions, access |
-| 16:50 | **Route 1:** upload files directly (demo) |
-| 17:05 | **Route 2:** archive a GitHub release (demo) |
-| 17:20 | Tips for big teams |
-| 17:25 | **Q&A**, plus help with your own projects |
-:::
+- Why archive, and what Zenodo is
+- Key ideas: records, DOIs, versions, access
+- **Route 1:** upload files directly (demo)
+- **Route 2:** archive a GitHub release (demo)
+- Tips for big teams
+- **Q&A**, plus help with your own projects
 
 ::: notes
 Roughly 55 minutes of content with 30 minutes for Q&A. If demos run long, cut the big team tips down to the slide and talk through it quickly. Q&A time is the priority.
