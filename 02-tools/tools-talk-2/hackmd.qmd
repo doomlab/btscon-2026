@@ -31,19 +31,10 @@ Not anti-Google: it's a low-barrier default. The point is to know what the optio
 
 ## What Is HackMD?
 
-:::: {.columns}
-::: {.column width="55%"}
-- A real-time collaborative markdown editor in the browser
+- A real-time collaborative markdown editor in the browser: [hackmd.io](https://hackmd.io/)
 - Write on the left, see the formatted result on the right
 - Notes are plain text, so they're easy to move, version, and sync with GitHub
 - Our working group drafted the BTS workflow map in it
-:::
-::: {.column width="45%"}
-[hackmd.io](https://hackmd.io/)
-
-[TODO: screenshot of the split editor/preview view]{.todo}
-:::
-::::
 
 ## Markdown in 60 Seconds
 
