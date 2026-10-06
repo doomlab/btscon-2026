@@ -33,10 +33,6 @@ Roughly 55 minutes of content with 30 minutes for Q&A. If demos run long, cut th
 - **OSF has changed,** so many networks need a new home for files and DOIs
 - **Links break:** websites and repos get renamed, moved, or deleted, but a DOI keeps working
 
-::: {.callout-box}
-A DOI is a promise: this link will still work, and this version won't change.
-:::
-
 ## What Is Zenodo?
 
 :::: {.columns}
