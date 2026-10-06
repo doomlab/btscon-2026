@@ -559,6 +559,39 @@ Erin M. Buchanan
 <h1>Route 2: Archive a GitHub Release</h1>
 
 </section>
+<section id="commits-vs.-releases" class="slide level2">
+<h2>Commits vs.&nbsp;Releases</h2>
+<div class="flow">
+<div class="step">
+<p><strong>Commit</strong></p>
+<p>A saved change to your files. You make lots of them, every time you work on the project.</p>
+<p><em>Like hitting save on a document</em></p>
+</div>
+<div class="step gold">
+<p><strong>Release</strong></p>
+<p>A named snapshot of the whole repo at one moment (e.g., <code>v1.0.0</code>), with notes about what changed.</p>
+<p><em>Like submitting a version of the paper</em></p>
+</div>
+</div>
+<ul>
+<li>Zenodo ignores commits. It only archives releases.</li>
+<li>Each release becomes a new version of your Zenodo record, with its own DOI.</li>
+<li>Make a release when something is done: data collection closes, the analysis is final, the paper is submitted.</li>
+</ul>
+<aside class="notes">
+<p>A release is tied to a tag, which marks one specific commit. Everything in the repo at that commit is what Zenodo copies. Commits in between releases don’t get DOIs, and that’s fine; you only want DOIs for versions people will cite.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
 <section id="how-it-works" class="slide level2">
 <h2>How It Works</h2>
 <div class="flow">
@@ -772,7 +805,6 @@ Erin M. Buchanan
 <div class="r-fit-text">
 <p>Let’s archive something!</p>
 </div>
-<p>Bring your own repo or files and we’ll work through them together.</p>
 
 </section></section>
     </div>

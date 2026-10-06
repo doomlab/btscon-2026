@@ -276,6 +276,34 @@ Zenodo passes these links to DataCite along with the DOI, so indexes and other s
 
 # Route 2: Archive a GitHub Release {background-color="#1f3a5f"}
 
+## Commits vs. Releases
+
+:::: {.flow}
+::: {.step}
+**Commit**
+
+A saved change to your files. You make lots of them, every time you work on the project.
+
+*Like hitting save on a document*
+:::
+
+::: {.step .gold}
+**Release**
+
+A named snapshot of the whole repo at one moment (e.g., `v1.0.0`), with notes about what changed.
+
+*Like submitting a version of the paper*
+:::
+::::
+
+- Zenodo ignores commits. It only archives releases.
+- Each release becomes a new version of your Zenodo record, with its own DOI.
+- Make a release when something is done: data collection closes, the analysis is final, the paper is submitted.
+
+::: notes
+A release is tied to a tag, which marks one specific commit. Everything in the repo at that commit is what Zenodo copies. Commits in between releases don't get DOIs, and that's fine; you only want DOIs for versions people will cite.
+:::
+
 ## How It Works
 
 :::: {.flow}
@@ -445,5 +473,3 @@ tenzing can help collect contributor names, affiliations, and ORCIDs up front. C
 ::: {.r-fit-text}
 Let's archive something!
 :::
-
-Bring your own repo or files and we'll work through them together.
