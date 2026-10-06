@@ -34,7 +34,11 @@ Not anti-Google: it's a low-barrier default. The point is to know what the optio
 - A real-time collaborative markdown editor in the browser: [hackmd.io](https://hackmd.io/)
 - Write on the left, see the formatted result on the right
 - Notes are plain text, so they're easy to move, version, and sync with GitHub
-- Our working group drafted the BTS workflow map in it
+- Our working group built its [BTS tools map](https://hackmd.io/K01UHojtQwa_f2H8eOCkqA) in it
+
+::: notes
+Open the tools map and switch between the three views with the buttons at the top: edit only, split (edit + preview side by side), and view only. Then show the table of contents and the workflow diagram rendering live.
+:::
 
 ## Markdown in 60 Seconds
 
