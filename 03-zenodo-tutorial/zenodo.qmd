@@ -86,6 +86,8 @@ Version DOI
 - The concept DOI ties all the versions together.
 - Need a change? Make a new version, not a new record.
 
+See it in action: [jaspSyntheticData](https://doi.org/10.5281/zenodo.23075931) has v0.1.0 and v0.2.0 under one concept DOI.
+
 ::: notes
 Which DOI to cite: the version DOI when you need the exact files (e.g., the analysis in a paper); the concept DOI when you mean "this project, whatever the latest is." Files in a published version can't be changed; that's the point.
 :::
@@ -221,7 +223,7 @@ DOI + badge for your README
 Every new GitHub release becomes a new version of the same Zenodo record.
 
 ::: notes
-Releases were covered in the GitHub pre-conference workshop (recording: youtu.be/GCKf3qF0a_0). A release is a snapshot of your repo at a point in time, with a tag like v1.0.0.
+Real example to show: jaspSyntheticData (doi.org/10.5281/zenodo.23075931), archived from GitHub releases v0.1.0 and v0.2.0 of github.com/doomlab/jasp-synthetic-data. Releases were covered in the GitHub pre-conference workshop (recording: youtu.be/GCKf3qF0a_0). A release is a snapshot of your repo at a point in time, with a tag like v1.0.0.
 :::
 
 ## Connecting GitHub, Step by Step
