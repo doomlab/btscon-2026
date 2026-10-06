@@ -95,25 +95,31 @@ Which DOI to cite: the version DOI when you need the exact files (e.g., the anal
 
 ## Key Idea: Access Options
 
-:::: {.columns}
-::: {.column width="33%"}
-### Open
+Choose who can download the files:
+
+:::: {.flow}
+::: {.step}
+**Open**
 
 Anyone can download the files
 :::
-::: {.column width="33%"}
-### Restricted
+
+::: {.step .gold}
+**Restricted**
 
 People request access and you approve
 :::
-::: {.column width="33%"}
-### Embargoed
+
+::: {.step .pink}
+**Embargoed**
 
 Files open up automatically on a date you pick
 :::
 ::::
 
+::: {.callout-box}
 The description is always public, even when the files aren't.
+:::
 
 ::: notes
 Restricted is useful for sensitive data in multi-site projects: the record is findable and citable, but you control who gets the files. Pick a license too (e.g., CC-BY 4.0 for data and materials, MIT for code).
