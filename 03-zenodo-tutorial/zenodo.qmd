@@ -418,7 +418,7 @@ More control: contributors, funding, communities, and links to your paper. If bo
 
 ## Zenodo for Big Team Science
 
-- Make a Zenodo Community for your network to collect every project's outputs in one place
+- Make a Zenodo Community for your network to collect every project's outputs in one place (example: [CREP's community](https://zenodo.org/communities/crep/records))
 - Get everyone's ORCID before you publish, because author lists are long
 - Link everything with related identifiers: preprint ↔ data ↔ code ↔ materials
 - One record per output, with new versions when things change
@@ -426,7 +426,7 @@ More control: contributors, funding, communities, and links to your paper. If bo
 - Add your funder (e.g., SSHRC grant) in the metadata
 
 ::: notes
-tenzing can help collect contributor names, affiliations, and ORCIDs up front. Communities can be curated, so a network can review what gets added.
+tenzing can help collect contributor names, affiliations, and ORCIDs up front. Communities can be curated, so a network can review what gets added. CREP (the Collaborative Replications and Education Project) has a community that gathers its records in one place.
 :::
 
 ## Cheat Sheet
