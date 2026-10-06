@@ -183,8 +183,59 @@ Once you publish, you can't swap the files. Double-check before publishing, or m
    - Pick a relation (e.g., "Is supplement to") and paste the DOI or URL
 6. Choose access (open, restricted, embargoed), then Publish
 
+Zenodo's form has more sections too (funding, alternate identifiers, references, and more), but these are the most important ones to fill in.
+
 ::: notes
 Creators vs contributors for big teams: creators are the author list that shows up when someone cites the record; contributors get credit on the record page but not in the citation (e.g., site research assistants, translators). Contributor roles come from the DataCite vocabulary. Related works are what tie a project together: the data record "Is supplement to" the paper, the code "Is supplement to" the data, and so on.
+:::
+
+## Related Works: Connecting Your DOIs {.compact}
+
+One project, many DOIs. Related works tell readers (and search indexes) how they fit together:
+
+:::: {.flow}
+::: {.step .navy}
+**Preregistration**
+
+PreReg or OSF DOI
+:::
+
+[→]{.arrow}
+
+::: {.step}
+**Data**
+
+Zenodo DOI
+:::
+
+[→]{.arrow}
+
+::: {.step .gold}
+**Code**
+
+Zenodo DOI
+:::
+
+[→]{.arrow}
+
+::: {.step .pink}
+**Preprint / Paper**
+
+PsyArXiv or journal DOI
+:::
+::::
+
+| This record... | Relation | ...links to |
+|----------------|----------|-------------|
+| Data | Is documented by | the preregistration |
+| Data | Is supplement to | the preprint or paper |
+| Code | Is supplement to | the data |
+| Data v2 | Is derived from | an earlier dataset |
+
+Add links as they appear: when the paper is published, edit the record and add its DOI. No new version needed.
+
+::: notes
+Zenodo passes these links to DataCite along with the DOI, so indexes and other services can connect your outputs: someone who finds the paper can find the data, and vice versa. Do it in both directions where you can: put the data DOI in the paper's data availability statement, and the paper DOI in the data record. This is where the editable-description idea pays off.
 :::
 
 ## Live Demo: Upload

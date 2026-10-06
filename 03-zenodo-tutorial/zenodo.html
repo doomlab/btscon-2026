@@ -96,7 +96,7 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="zenodo_files/libs/revealjs/dist/theme/quarto-c041a141a67afca1b5cd1676af6d9062.css">
+  <link rel="stylesheet" href="zenodo_files/libs/revealjs/dist/theme/quarto-b1991bee2a6f3edfdb22dddc1487be26.css">
   <link href="zenodo_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="zenodo_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="zenodo_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -430,8 +430,79 @@ Erin M. Buchanan
 </ul></li>
 <li>Choose access (open, restricted, embargoed), then Publish</li>
 </ol>
+<p>Zenodo’s form has more sections too (funding, alternate identifiers, references, and more), but these are the most important ones to fill in.</p>
 <aside class="notes">
 <p>Creators vs contributors for big teams: creators are the author list that shows up when someone cites the record; contributors get credit on the record page but not in the citation (e.g., site research assistants, translators). Contributor roles come from the DataCite vocabulary. Related works are what tie a project together: the data record “Is supplement to” the paper, the code “Is supplement to” the data, and so on.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="related-works-connecting-your-dois" class="slide level2 compact">
+<h2>Related Works: Connecting Your DOIs</h2>
+<p>One project, many DOIs. Related works tell readers (and search indexes) how they fit together:</p>
+<div class="flow">
+<div class="step navy">
+<p><strong>Preregistration</strong></p>
+<p>PreReg or OSF DOI</p>
+</div>
+<p><span class="arrow">→</span></p>
+<div class="step">
+<p><strong>Data</strong></p>
+<p>Zenodo DOI</p>
+</div>
+<p><span class="arrow">→</span></p>
+<div class="step gold">
+<p><strong>Code</strong></p>
+<p>Zenodo DOI</p>
+</div>
+<p><span class="arrow">→</span></p>
+<div class="step pink">
+<p><strong>Preprint / Paper</strong></p>
+<p>PsyArXiv or journal DOI</p>
+</div>
+</div>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>This record…</th>
+<th>Relation</th>
+<th>…links to</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Data</td>
+<td>Is documented by</td>
+<td>the preregistration</td>
+</tr>
+<tr class="even">
+<td>Data</td>
+<td>Is supplement to</td>
+<td>the preprint or paper</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td>Is supplement to</td>
+<td>the data</td>
+</tr>
+<tr class="even">
+<td>Data v2</td>
+<td>Is derived from</td>
+<td>an earlier dataset</td>
+</tr>
+</tbody>
+</table>
+<p>Add links as they appear: when the paper is published, edit the record and add its DOI. No new version needed.</p>
+<aside class="notes">
+<p>Zenodo passes these links to DataCite along with the DOI, so indexes and other services can connect your outputs: someone who finds the paper can find the data, and vice versa. Do it in both directions where you can: put the data DOI in the paper’s data availability statement, and the paper DOI in the data record. This is where the editable-description idea pays off.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
