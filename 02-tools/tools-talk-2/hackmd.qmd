@@ -18,14 +18,12 @@ format:
 
 From yesterday's survey of BTS researchers:
 
-- Strong **disdain for mega-corps** and a preference for **open source**
-- Worries about cost and **"adoption then enshittification"**
-- Frustration with tools that make it **impossible to collaborate across institutions**
-- Want **simultaneous editing *and* version history**
+- Strong disdain for mega-corps and a preference for open source
+- Worries about cost and "adoption then enshittification"
+- Frustration with tools that make it impossible to collaborate across institutions
+- Want simultaneous editing *and* version history
 
-::: {.callout-box}
 Google Docs works for a lot of people. But not every collaborator can or wants to use it.
-:::
 
 ::: notes
 Not anti-Google: it's a low-barrier default. The point is to know what the options are when it doesn't fit your team.
@@ -35,7 +33,7 @@ Not anti-Google: it's a low-barrier default. The point is to know what the optio
 
 :::: {.columns}
 ::: {.column width="55%"}
-- A **real-time collaborative markdown editor** in the browser
+- A real-time collaborative markdown editor in the browser
 - Write on the left, see the formatted result on the right
 - Notes are plain text, so they're easy to move, version, and sync with GitHub
 - Our working group drafted the BTS workflow map in it
@@ -97,16 +95,16 @@ Markdown is part of the "hidden curriculum": a general skill you pick up once an
 
 :::: {.columns}
 ::: {.column width="50%"}
-- **Live co-editing** with everyone's cursor visible
-- **Comments** and named notes inline
-- **Version history** to go back in time
-- **Tables, images, and diagrams** (Mermaid)
+- Live co-editing with everyone's cursor visible
+- Comments and named notes inline
+- Version history to go back in time
+- Tables, images, and diagrams (Mermaid)
 :::
 ::: {.column width="50%"}
-- **GitHub sync** to push notes to a repo
-- **Templates** for agendas and protocols
-- **Books** that link notes into one guide
-- **Slide mode** to present straight from a note
+- GitHub sync to push notes to a repo
+- Templates for agendas and protocols
+- Books that link notes into one guide
+- Slide mode to present straight from a note
 :::
 ::::
 
@@ -178,23 +176,21 @@ HedgeDoc is the open-source cousin of HackMD (they share a code history), so it'
 
 ## Which One Should My Team Use?
 
-- Do you need **tracked changes and journal formatting**? → Word, ONLYOFFICE, or Collabora
-- Is **privacy** essential, or are some collaborators unable to use Google? → CryptPad or Proton Docs
-- Is your team **comfortable with markdown and GitHub**? → HackMD or HedgeDoc
-- Are you writing a **LaTeX** paper? → Overleaf
-- Do you want **code and text in one place**? → Quarto + GitHub
+- Do you need tracked changes and journal formatting? → Word, ONLYOFFICE, or Collabora
+- Is privacy essential, or are some collaborators unable to use Google? → CryptPad or Proton Docs
+- Is your team comfortable with markdown and GitHub? → HackMD or HedgeDoc
+- Are you writing a LaTeX paper? → Overleaf
+- Do you want code and text in one place? → Quarto + GitHub
 
-::: {.callout-box}
-Pick the tool your *least technical* collaborator can use.
-:::
+Rule of thumb: pick the tool your least technical collaborator can use.
 
 ## Tips for Big Team Writing
 
-- Keep **one source of truth**: draft in one place, finalize in one place
-- **Draft in HackMD, finalize elsewhere**: move to Word or Quarto for journal formatting
-- Use **comments for discussion**, not edits on top of other people's text
+- Keep one source of truth: draft in one place, finalize in one place
+- Draft in HackMD, finalize elsewhere: move to Word or Quarto for journal formatting
+- Use comments for discussion, not edits on top of other people's text
 - Record contributions as you go with CRediT
-- Put the link in **every meeting agenda** so nobody has to hunt for the document
+- Put the link in every meeting agenda so nobody has to hunt for the document
 
 ## Try It
 
