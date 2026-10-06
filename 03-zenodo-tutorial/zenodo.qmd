@@ -298,10 +298,10 @@ More control: contributors, funding, communities, and links to your paper. **If 
 
 ## Live Demo: GitHub Release
 
-[TODO: link to the demo repo]{.todo}
+[github.com/doomlab/btscon-2026](https://github.com/doomlab/btscon-2026): the slides from this conference!
 
 1. Switch the repo on in the Zenodo sandbox
-2. Show the `CITATION.cff` file
+2. Show `CITATION.cff` and `.zenodo.json`. This repo has both, so Zenodo uses `.zenodo.json`
 3. Publish release `v1.0.0` on GitHub
 4. Find the new record and DOI in Zenodo
 5. Add the DOI badge to the README

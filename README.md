@@ -20,7 +20,7 @@ Also included:
 
 ## Citation
 
-This repository is archived on [Zenodo](https://zenodo.org/). See [`CITATION.cff`](CITATION.cff), or use the **Cite this repository** button on GitHub.
+This repository is archived on [Zenodo](https://zenodo.org/) through the GitHub integration, which is also the live demo in the Zenodo tutorial. See [`CITATION.cff`](CITATION.cff), or use the **Cite this repository** button on GitHub.
 
 ## License
 
