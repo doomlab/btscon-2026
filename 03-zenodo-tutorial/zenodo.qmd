@@ -17,10 +17,10 @@ format:
 
 - Why archive, and what Zenodo is
 - Key ideas: records, DOIs, versions, access
-- **Route 1:** upload files directly (demo)
-- **Route 2:** archive a GitHub release (demo)
+- Route 1: upload files directly (demo)
+- Route 2: archive a GitHub release (demo)
 - Tips for big teams
-- **Q&A**, plus help with your own projects
+- Q&A, plus help with your own projects
 
 ::: notes
 Roughly 55 minutes of content with 30 minutes for Q&A. If demos run long, cut the big team tips down to the slide and talk through it quickly. Q&A time is the priority.
@@ -28,21 +28,21 @@ Roughly 55 minutes of content with 30 minutes for Q&A. If demos run long, cut th
 
 ## Why Archive?
 
-- **Get credit for everything you make:** data, materials, code, and protocols, not just papers
-- **Funders and journals** increasingly ask for persistent identifiers (DOIs)
-- **OSF has changed,** so many networks need a new home for files and DOIs
-- **Links break:** websites and repos get renamed, moved, or deleted, but a DOI keeps working
+- Get credit for everything you make: data, materials, code, and protocols, not just papers
+- Funders and journals increasingly ask for persistent identifiers (DOIs)
+- OSF has changed, so many networks need a new home for files and DOIs
+- Links break: websites and repos get renamed, moved, or deleted, but a DOI keeps working
 
 ## What Is Zenodo?
 
-- A general-purpose repository run by **CERN**
-- **Free** to use, and the software is **open source** (InvenioRDM)
-- Accepts **any research output**: data, code, slides, posters, protocols, preprints
-- Up to **50 GB and 100 files** per record
-- Every record gets a **DOI**
+- A general-purpose repository run by CERN
+- Free to use, and the software is open source (InvenioRDM)
+- Accepts any research output: data, code, slides, posters, protocols, preprints
+- Up to 50 GB and 100 files per record
+- Every record gets a DOI
 
 ::: {.callout-box}
-[zenodo.org](https://zenodo.org/): log in with **ORCID**, **GitHub**, or an email account
+[zenodo.org](https://zenodo.org/): log in with ORCID, GitHub, or an email account
 :::
 
 ::: notes
@@ -85,9 +85,9 @@ Version DOI
 :::
 ::::
 
-- Each **record** is one thing you archive. Each **version** gets its own DOI.
-- The **concept DOI** ties all the versions together.
-- Need a change? Make a **new version**, not a new record.
+- Each record is one thing you archive. Each version gets its own DOI.
+- The concept DOI ties all the versions together.
+- Need a change? Make a new version, not a new record.
 
 ::: notes
 Which DOI to cite: the version DOI when you need the exact files (e.g., the analysis in a paper); the concept DOI when you mean "this project, whatever the latest is." Files in a published version can't be changed; that's the point.
@@ -104,7 +104,7 @@ Anyone can download the files
 ::: {.column width="33%"}
 ### Restricted
 
-People **request access** and you approve
+People request access and you approve
 :::
 ::: {.column width="33%"}
 ### Embargoed
@@ -113,7 +113,7 @@ Files open up automatically on a date you pick
 :::
 ::::
 
-The **description is always public**, even when the files aren't.
+The description is always public, even when the files aren't.
 
 ::: notes
 Restricted is useful for sensitive data in multi-site projects: the record is findable and citable, but you control who gets the files. Pick a license too (e.g., CC-BY 4.0 for data and materials, MIT for code).
@@ -123,9 +123,9 @@ Restricted is useful for sensitive data in multi-site projects: the record is fi
 
 [sandbox.zenodo.org](https://sandbox.zenodo.org/)
 
-- A full copy of Zenodo **just for testing**
+- A full copy of Zenodo just for testing
 - Separate account; nothing there is permanent
-- DOIs from the sandbox are **not real**
+- DOIs from the sandbox are not real
 
 ::: {.callout-box}
 Everything I demo today happens in the sandbox. Do your first try there, too!
@@ -135,15 +135,15 @@ Everything I demo today happens in the sandbox. Do your first try there, too!
 
 ## Uploading Files, Step by Step
 
-1. Click **New upload**
+1. Click New upload
 2. Drag in your files
-3. Answer "Do you already have a DOI?" → **No** (Zenodo reserves one for you)
+3. Answer "Do you already have a DOI?" → No (Zenodo reserves one for you)
 4. Fill in the description:
-   - **Resource type** (dataset, software, presentation...)
-   - **Title**, **creators** (with ORCIDs), **description**
-   - **License**
-5. Choose **access** (open, restricted, embargoed)
-6. **Publish**
+   - Resource type (dataset, software, presentation...)
+   - Title, creators (with ORCIDs), description
+   - License
+5. Choose access (open, restricted, embargoed)
+6. Publish
 
 ::: notes
 Warn the audience: once you publish, you can't swap the files. Double-check before publishing, or make a new version.
@@ -157,7 +157,7 @@ Warn the audience: once you publish, you can't swap the files. Double-check befo
 2. Create a new upload and add the files
 3. Add creators with ORCIDs
 4. Publish and look at the DOI
-5. Make a **new version** of the record
+5. Make a new version of the record
 
 # Route 2: Archive a GitHub Release {background-color="#1f3a5f"}
 
@@ -195,7 +195,7 @@ DOI + badge for your README
 :::
 ::::
 
-Every new GitHub release becomes a new **version** of the same Zenodo record.
+Every new GitHub release becomes a new version of the same Zenodo record.
 
 ::: notes
 Releases were covered in the GitHub pre-conference workshop (recording: youtu.be/GCKf3qF0a_0). A release is a snapshot of your repo at a point in time, with a tag like v1.0.0.
@@ -207,21 +207,21 @@ Releases were covered in the GitHub pre-conference workshop (recording: youtu.be
 ::: {.column width="50%"}
 **In Zenodo:**
 
-1. Log in, then open your profile menu → **GitHub**
-2. Click **Sync now**
-3. Find your repository and **flip the switch** to on
+1. Log in, then open your profile menu → GitHub
+2. Click Sync now
+3. Find your repository and flip the switch to on
 :::
 ::: {.column width="50%"}
 **In GitHub:**
 
-4. Go to your repo → **Releases** → **Draft a new release**
+4. Go to your repo → Releases → Draft a new release
 5. Add a tag (e.g., `v1.0.0`), a title, and notes
-6. Click **Publish release**
+6. Click Publish release
 :::
 :::::
 
 ::: {.callout-box}
-**Back in Zenodo:** wait a few minutes, then find your new DOI on the **GitHub** page.
+**Back in Zenodo:** wait a few minutes, then find your new DOI on the GitHub page.
 :::
 
 ::: notes
@@ -250,7 +250,7 @@ keywords:
   - big team science
 ```
 
-Bonus: GitHub shows a **"Cite this repository"** button.
+Bonus: GitHub shows a "Cite this repository" button.
 
 ::: notes
 Make one at the citation file format initializer: citation-file-format.github.io/cff-initializer-javascript. Validate with cffconvert before releasing.
@@ -258,7 +258,7 @@ Make one at the citation file format initializer: citation-file-format.github.io
 
 ## Or: .zenodo.json
 
-More control: contributors, funding, communities, and links to your paper. **If both files exist, Zenodo uses only `.zenodo.json`.**
+More control: contributors, funding, communities, and links to your paper. If both files exist, Zenodo uses only `.zenodo.json`.
 
 ```json
 {
@@ -296,21 +296,21 @@ More control: contributors, funding, communities, and links to your paper. **If 
 
 ## When It Doesn't Work
 
-- **No record appeared?** Check the repo was switched on *before* the release, and that the release was published (not a draft).
-- **Release failed?** In Zenodo's GitHub page, click the release, then **Errors**. It's usually the metadata.
-- **Bad `CITATION.cff`?** Validate it with [cffconvert](https://github.com/citation-file-format/cffconvert) first.
-- **Wrong authors or title?** Fix the metadata file, then publish a new release.
+- No record appeared? Check the repo was switched on *before* the release, and that the release was published (not a draft).
+- Release failed? In Zenodo's GitHub page, click the release, then Errors. It's usually the metadata.
+- Bad `CITATION.cff`? Validate it with [cffconvert](https://github.com/citation-file-format/cffconvert) first.
+- Wrong authors or title? Fix the metadata file, then publish a new release.
 
 # Tips for Big Teams {background-color="#1f3a5f"}
 
 ## Zenodo for Big Team Science
 
-- **Make a Zenodo Community** for your network to collect every project's outputs in one place
-- **Get everyone's ORCID** before you publish, because author lists are long
-- **Link everything** with related identifiers: preprint ↔ data ↔ code ↔ materials
-- **One record per output**, with **new versions** when things change
-- Use **restricted access** for sensitive data so it's citable but controlled
-- Add your **funder** (e.g., SSHRC grant) in the metadata
+- Make a Zenodo Community for your network to collect every project's outputs in one place
+- Get everyone's ORCID before you publish, because author lists are long
+- Link everything with related identifiers: preprint ↔ data ↔ code ↔ materials
+- One record per output, with new versions when things change
+- Use restricted access for sensitive data so it's citable but controlled
+- Add your funder (e.g., SSHRC grant) in the metadata
 
 ::: notes
 tenzing can help collect contributor names, affiliations, and ORCIDs up front. Communities can be curated, so a network can review what gets added.
