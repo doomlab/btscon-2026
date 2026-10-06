@@ -1,0 +1,170 @@
+/*-- scss:defaults --*/
+
+$bts-navy: #1f3a5f;
+$bts-teal: #2a9d8f;
+$bts-gold: #e9c46a;
+
+$body-bg: #ffffff;
+$body-color: #222222;
+$link-color: $bts-teal;
+$presentation-heading-color: $bts-navy;
+$presentation-font-size-root: 36px;
+
+/*-- scss:rules --*/
+
+.reveal .slide-title,
+.reveal h1.title {
+  color: $bts-navy;
+}
+
+.reveal .big-number {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: $bts-teal;
+  line-height: 1;
+}
+
+.reveal .callout-box {
+  border-left: 6px solid $bts-gold;
+  background: lighten($bts-gold, 30%);
+  padding: 0.5em 0.8em;
+  border-radius: 4px;
+}
+
+.reveal .todo {
+  background: #fff3cd;
+  color: #7a5c00;
+  padding: 0 0.2em;
+  border-radius: 3px;
+}
+
+.reveal .has-dark-background,
+.reveal .has-dark-background h1,
+.reveal .has-dark-background h2,
+.reveal .has-dark-background p {
+  color: #ffffff;
+}
+
+.reveal .timeline {
+  display: block;
+  text-align: center;
+  font-size: 1.1em;
+  color: $bts-navy;
+  margin: 0.6em 0;
+}
+
+.reveal .speaker {
+  text-align: center;
+  font-size: 0.7em;
+}
+
+.reveal .speaker img {
+  border-radius: 50%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
+/* pricing / license badges */
+.reveal .badge {
+  display: inline-block;
+  font-size: 0.55em;
+  font-weight: 600;
+  padding: 0.1em 0.45em;
+  border-radius: 0.6em;
+  vertical-align: middle;
+  margin-left: 0.25em;
+}
+.reveal .open { background: #d8f0ec; color: #1d6f65; }
+.reveal .free { background: #e3ecf7; color: $bts-navy; }
+.reveal .freemium { background: #fbf0d4; color: #7a5c00; }
+.reveal .paid { background: #f6dede; color: #8a2b2b; }
+
+.reveal .small { font-size: 0.7em; }
+
+.reveal table { font-size: 0.6em; }
+
+/* workflow phase grid */
+.reveal .phases {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5em;
+  font-size: 0.6em;
+}
+.reveal .phase {
+  border-top: 8px solid $bts-teal;
+  background: #f4f8fb;
+  padding: 0.4em 0.6em;
+  border-radius: 4px;
+}
+.reveal .phase h4 {
+  margin: 0 0 0.3em 0;
+  color: $bts-navy;
+  font-size: 1.2em;
+}
+.reveal .phase ol { margin: 0; padding-left: 1.2em; }
+.reveal .phase.found { border-top-color: $bts-navy; }
+.reveal .phase.data { border-top-color: $bts-teal; }
+.reveal .phase.analysis { border-top-color: $bts-gold; }
+.reveal .phase.outputs { border-top-color: #b5567a; }
+.reveal .phase .phase-title {
+  display: block;
+  font-weight: 700;
+  color: $bts-navy;
+  font-size: 1.2em;
+  margin-bottom: 0.3em;
+}
+.reveal .tools .columns { font-size: 0.85em; }
+.reveal .tools li { margin-bottom: 0.15em; }
+
+/* tool chips colored by pricing */
+.reveal .chip {
+  display: inline-block;
+  padding: 0.05em 0.5em;
+  margin: 0 0.15em 0.3em 0;
+  border-radius: 0.8em;
+  background: #f1f1f1;
+  color: #333;
+  font-size: 0.9em;
+  white-space: nowrap;
+}
+.reveal .subhead {
+  display: block;
+  font-size: 0.75em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #6b7a8a;
+  margin: 0.5em 0 0.2em 0;
+}
+.reveal .tools p { margin: 0; }
+.reveal .chip.open { background: #d8f0ec; color: #1d6f65; }
+.reveal .chip.free { background: #e3ecf7; color: $bts-navy; }
+.reveal .chip.freemium { background: #fbf0d4; color: #7a5c00; }
+.reveal .chip.paid { background: #f6dede; color: #8a2b2b; }
+
+.reveal .legend {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 0.75em;
+}
+
+/* cross-cutting "glue" cards */
+.reveal .glue {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6em;
+  margin-top: 0.4em;
+}
+.reveal .glue .card {
+  background: #f4f8fb;
+  border-radius: 10px;
+  border-top: 6px solid $bts-teal;
+  padding: 0.4em 0.6em;
+  text-align: center;
+  font-size: 0.8em;
+}
+.reveal .glue .card:nth-child(3n+2) { border-top-color: $bts-gold; }
+.reveal .glue .card:nth-child(3n) { border-top-color: #b5567a; }
+.reveal .glue .card p { margin: 0.15em 0; }
+.reveal .glue .icon { font-size: 2em; line-height: 1.2; }

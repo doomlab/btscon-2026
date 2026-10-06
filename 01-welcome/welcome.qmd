@@ -1,0 +1,269 @@
+---
+title: "Welcome to BTSCon 2026"
+subtitle: "The 5th Annual Big Team Science Conference"
+author: "Erin M. Buchanan"
+date: "October 6, 2026"
+format:
+  revealjs:
+    theme: [default, btscon.scss]
+    slide-number: true
+    scrollable: true
+    preview-links: auto
+    footer: "BTSCon 2026 · [bigteamscienceconference.github.io](https://bigteamscienceconference.github.io/)"
+    logo: https://bigteamscienceconference.github.io/assets/img/BTSCON.png
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r setup}
+library(dplyr)
+library(ggplot2)
+library(sf)
+library(rnaturalearth)
+library(countrycode)
+
+# de-identified counts made by prep_registrations.R
+countries <- read.csv("data/registration_countries.csv")
+career <- read.csv("data/registration_career.csv")
+reg_summary <- read.csv("data/registration_summary.csv")
+
+n_continents <- n_distinct(countrycode(countries$iso3, "iso3c", "continent"))
+```
+
+## Welcome to Our 5th Annual Conference
+
+:::: {.columns}
+::: {.column width="55%"}
+![](https://bigteamscienceconference.github.io/assets/img/BTSCon2026_logo.png){fig-alt="2026 Big Team Science Conference; hosted virtually October 6-8"}
+
+[2022 → 2023 → 2024 → 2025 → **2026**]{.timeline}
+:::
+::: {.column width="45%"}
+Bringing together researchers, funders, and stakeholders to discuss the **advancements, challenges, and future** of large scientific collaborations
+
+- Three days, October 6–8
+- Fully virtual on Zoom
+:::
+::::
+
+::: notes
+Welcome everyone. This is our fifth year! Big team science: collaborations where a comparatively large number of researchers pool intellectual and/or material resources toward a common goal. If that describes your work, or you're just curious, you belong here.
+:::
+
+## Who's Here
+
+:::: {.columns}
+::: {.column width="33%"}
+[`r reg_summary$registrants`]{.big-number}
+
+registrants
+:::
+::: {.column width="33%"}
+[`r reg_summary$countries`]{.big-number}
+
+countries
+:::
+::: {.column width="33%"}
+[`r n_continents`]{.big-number}
+
+continents
+:::
+::::
+
+```{r map}
+#| fig-width: 12
+#| fig-height: 5.2
+#| fig-alt: "World map shaded by number of BTSCon 2026 registrants per country"
+world <- ne_countries(scale = "medium", returnclass = "sf") |>
+  filter(admin != "Antarctica") |>
+  mutate(iso3 = ifelse(iso_a3 == "-99", adm0_a3, iso_a3)) |>
+  left_join(countries, by = "iso3")
+
+ggplot(world) +
+  geom_sf(aes(fill = registrants), color = "white", linewidth = 0.15) +
+  scale_fill_gradient(
+    low = "#b8e0db", high = "#1f3a5f", na.value = "#eeeeee",
+    trans = "log10", name = "Registrants"
+  ) +
+  coord_sf(crs = "+proj=robin") +
+  theme_void(base_size = 16) +
+  theme(legend.position = "right")
+```
+
+::: notes
+Counts are unique registrants (duplicates removed by email). A handful of people answered with a region (e.g., "Europe") instead of a country, so they aren't on the map. Top countries: `r paste(head(countries$country, 5), collapse = ", ")`.
+:::
+
+## A Community at Every Career Stage
+
+```{r career}
+#| fig-width: 11
+#| fig-height: 5
+#| fig-alt: "Bar chart of registrants by career stage"
+career |>
+  mutate(stage = factor(stage, levels = c(
+    "Student", "Early career (1-10 years)",
+    "Mid career (11-20 years)", "Senior (21+ years)"
+  ))) |>
+  ggplot(aes(x = stage, y = registrants)) +
+  geom_col(fill = "#2a9d8f", width = 0.65) +
+  geom_text(aes(label = registrants), vjust = -0.4, size = 7, color = "#1f3a5f") +
+  scale_y_continuous(expand = expansion(mult = c(0, 0.12))) +
+  labs(x = NULL, y = NULL) +
+  theme_minimal(base_size = 20) +
+  theme(panel.grid = element_blank(), axis.text.y = element_blank())
+```
+
+::: notes
+About half of our registrants are students, which is a great sign for the future of big team science.
+:::
+
+## What's on the Program
+
+:::: {.columns}
+::: {.column width="50%"}
+- Symposia & panels
+- Talks & lightning talks
+- Hackathons
+- Unconferences
+:::
+::: {.column width="50%"}
+**Pre-conference workshop recordings**
+
+- [What is GitHub?](https://youtu.be/GCKf3qF0a_0)
+- [YouTube Channel](https://www.youtube.com/channel/UC8U_JqXhoUu0AhgFM_vsO6Q)
+:::
+::::
+
+[View the 2026 BTSCon Program](https://docs.google.com/document/d/1Fgjw4pte4GvezmWQgxnQMihg1qH7D8bhc1wXfzL1du0/edit?usp=sharing)
+
+Session links are sent to registrants by email.
+
+::: notes
+Point people to the GitHub workshop recording, since it leads into the Zenodo + GitHub releases tutorial later this week.
+:::
+
+## Featured: Big Questions about Analytical Robustness
+
+:::: {.columns}
+::: {.column width="33%" .speaker}
+![](https://bigteamscienceconference.github.io/assets/img/szaszi_headshot.jpg){fig-alt="Barnabas Szaszi" height="200"}
+
+**Barnabas Szaszi**
+
+*Empirical Results on Analytical Variability*
+
+Corvinus University of Budapest; ELTE
+:::
+::: {.column width="33%" .speaker}
+![](https://bigteamscienceconference.github.io/assets/img/aczel_headshot.jpg){fig-alt="Balazs Aczel" height="200"}
+
+**Balazs Aczel**
+
+*Conceptual Treatment of Analytical Variability*
+
+ELTE Eötvös Loránd University
+:::
+::: {.column width="33%" .speaker}
+![](https://bigteamscienceconference.github.io/assets/img/sarafoglou_headshot.jpg){fig-alt="Alexandra Sarafoglou" height="200"}
+
+**Alexandra Sarafoglou**
+
+*Statistical Treatment of Analytical Variability*
+
+University of Amsterdam
+:::
+::::
+
+## Featured: Podcast & CREP
+
+:::: {.columns}
+::: {.column width="50%" .speaker}
+![](https://bigteamscienceconference.github.io/assets/img/zwaan_headshot.jpg){fig-alt="Rolf Zwaan" height="200"}
+
+**Live Podcast Recording**
+
+[*Research as it Happens*](https://www.eur.nl/en/podcasts/research-it-happens)
+
+Rolf Zwaan, Erasmus University Rotterdam
+:::
+::: {.column width="50%" .speaker}
+![](https://bigteamscienceconference.github.io/assets/img/lazarevic_headshot.png){fig-alt="Ljiljana Lazarević" height="200"}
+
+**Talk:** [The Collaborative Replication and Education Project](https://www.crep-psych.org/)
+
+Ljiljana Lazarević, University of Belgrade
+:::
+::::
+
+## BTSCon's Organizers
+
+:::: {.columns}
+::: {.column width="25%"}
+![](https://bigteamscienceconference.github.io/assets/img/MB_logo.png){fig-alt="ManyBabies" height="110"}
+
+ManyBabies
+:::
+::: {.column width="25%"}
+![](https://bigteamscienceconference.github.io/assets/img/psa_logo.png){fig-alt="Psychological Science Accelerator" height="110"}
+
+PSA
+:::
+::: {.column width="25%"}
+![](https://bigteamscienceconference.github.io/assets/img/abrir.png){fig-alt="ABRIR" height="110"}
+
+ABRIR
+:::
+::: {.column width="25%"}
+![](https://bigteamscienceconference.github.io/assets/img/forrt-logo.png){fig-alt="FORRT" height="110"}
+
+FORRT
+:::
+::::
+
+**2026 Program Committee:** Alma Jeftic (ABRIR), Marine Joly (ManyPrimates), Mahmoud Elsherif (PSA, FORRT, ManyEyes), Losia Lagisz (SORTEE, CaRN)
+
+::: notes
+BTSCon is organized by members of these big team science communities. Thank the program committee and organizers. Ask the audience to react in Zoom to show their appreciation.
+:::
+
+## Supported by CONNECT
+
+:::: {.columns}
+::: {.column width="35%"}
+![](https://bigteamscienceconference.github.io/assets/img/connect-logo.png){fig-alt="CONNECT logo of interwoven lines"}
+
+![](https://bigteamscienceconference.github.io/assets/img/sshrc-logo.jpg){fig-alt="Social Sciences and Humanities Research Council of Canada" height="70"}
+:::
+::: {.column width="65%"}
+**C**oordinated **N**etwork of **N**etworks for **E**nhancing **C**ollaborative **T**eams
+
+- An SSHRC-funded "Team of Big Teams"
+- More than 3,500 researchers in more than 70 countries
+
+**Get involved:** [connect-btss.github.io/contact](https://connect-btss.github.io/contact/)
+:::
+::::
+
+## Code of Conduct & Accessibility
+
+::: {.callout-box}
+We are committed to a welcoming, inclusive, and harassment-free conference for everyone.
+:::
+
+- Be respectful and generous, and make space for voices that are heard less often
+- [Code of conduct & meeting rules](https://bigteamscienceconference.github.io/codeofconduct/) · [Accessibility information](https://bigteamscienceconference.github.io/access/)
+- Turn on Zoom captions if you'd like them, and use the chat for questions
+- Concerns: [bigteamscienceconference@gmail.com](mailto:bigteamscienceconference@gmail.com)
+
+## Stay Connected & Let's Get Started!
+
+- **Bluesky:** [\@btscon.bsky.social](https://bsky.app/profile/btscon.bsky.social) · **X:** [\@BigTeamSciCon](https://twitter.com/BigTeamSciCon)
+- **YouTube:** [Big Team Science Conference](https://www.youtube.com/channel/UC8U_JqXhoUu0AhgFM_vsO6Q)
+- **Merch:** [BTSCon store](https://www.bonfire.com/store/psychological-science-accelerator-store/)
+
+::: {.callout-box}
+Up next: [Research as it Happens]{.todo}
+:::

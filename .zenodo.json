@@ -1,0 +1,22 @@
+{
+  "title": "BTSCon 2026 Presentations: Welcome, Tools for Big Team Science, and Zenodo Tutorial",
+  "upload_type": "presentation",
+  "description": "Slides and materials from the 5th annual Big Team Science Conference (BTSCon 2026): the welcome session, two talks on tools for big team science from the CONNECT Tools and Infrastructure Working Group, and a tutorial on archiving work with Zenodo and GitHub releases.",
+  "creators": [
+    {
+      "name": "Buchanan, Erin M.",
+      "affiliation": "Harrisburg University of Science and Technology",
+      "orcid": "0000-0002-9689-4189"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "keywords": ["big team science", "BTSCon", "open science", "Zenodo", "research tools"],
+  "related_identifiers": [
+    {
+      "identifier": "https://bigteamscienceconference.github.io/",
+      "relation": "isPartOf",
+      "resource_type": "other"
+    }
+  ]
+}

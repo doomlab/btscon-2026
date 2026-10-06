@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: "BTSCon 2026 Presentations: Welcome, Tools for Big Team Science, and Zenodo Tutorial"
+version: 1.0.0
+date-released: 2026-10-06
+license: "CC-BY-4.0"
+type: software
+message: "If you use these materials, please cite them as below."
+abstract: "Slides and materials from the 5th annual Big Team Science Conference (BTSCon 2026): the welcome session, two talks on tools for big team science from the CONNECT Tools and Infrastructure Working Group, and a tutorial on archiving work with Zenodo and GitHub releases."
+authors:
+  - given-names: Erin M.
+    family-names: Buchanan
+    affiliation: Harrisburg University of Science and Technology
+    orcid: "https://orcid.org/0000-0002-9689-4189"
+keywords:
+  - big team science
+  - BTSCon
+  - open science
+  - Zenodo
+  - research tools

@@ -1,0 +1,392 @@
+---
+title: "Tools of the Trade: The Big Team Science Workflow"
+subtitle: "Mapping tools onto each stage of a BTS project"
+author: "Erin M. Buchanan & the CONNECT Tools and Infrastructure Working Group"
+date: "October 6, 2026"
+format:
+  revealjs:
+    theme: [default, btscon.scss]
+    slide-number: true
+    scrollable: true
+    preview-links: auto
+    footer: "BTSCon 2026 · CONNECT Tools & Infrastructure"
+    logo: https://bigteamscienceconference.github.io/assets/img/BTSCON.png
+---
+
+## From Survey to Workflow
+
+What the survey told us people want from tools:
+
+:::: {.columns}
+::: {.column width="50%"}
+- **Easy to use**, even for less technical collaborators
+- **Affordable and long-lasting**, without needing an institutional license
+- **Customizable**
+:::
+::: {.column width="50%"}
+- **Interoperable** across tools and institutions
+- **Synchronous editing and version control**
+- **Safe data** handling, with a preference for **open source**
+:::
+::::
+
+::: {.callout-box}
+So we asked: for each step of a big team science project, *what tools already exist?*
+:::
+
+::: notes
+Bridge from Francis's survey results. The takeaway: there are a lot of tools for a lot of things, and people often don't know about the alternatives. We built a map.
+:::
+
+## How We Built the Map
+
+- Started from the "101 Innovations" research workflow (Kramer & Bosman, 2016)
+- Adapted the stages for large, distributed, multi-site collaborations
+- Drafted a first list, then had the working group react, comment, and edit in a shared HackMD doc
+- **Still a work in progress, and we want your input**
+
+::: notes
+Be transparent: the first-pass table was AI-assisted to give the group something to react to. Specific packages may be too narrow; the group's comments shaped what's here.
+:::
+
+## The Big Team Science Workflow
+
+::: {.phases}
+::: {.phase .found}
+[Foundations]{.phase-title}
+
+1. Team formation & governance
+2. Study design & preregistration
+:::
+::: {.phase .data}
+[Data]{.phase-title}
+
+3. Data infrastructure & management
+4. Data collection & quality control
+5. Data cleaning & curation
+:::
+::: {.phase .analysis}
+[Analysis]{.phase-title}
+
+6. Statistical analysis & modelling
+7. Reproducibility & open science packaging
+:::
+::: {.phase .outputs}
+[Outputs]{.phase-title}
+
+8. Writing
+9. Publication & preprinting
+10. Dissemination & impact
+:::
+:::
+
+[open source]{.chip .open} [free]{.chip .free} [freemium]{.chip .freemium} [paid / institutional]{.chip .paid}
+
+::: notes
+Ten stages in four phases. On the next slides, tool names are colored by cost and licensing, since cost and open source came up so often in the survey.
+:::
+
+## Foundations {.tools}
+
+:::: {.columns}
+::: {.column width="50%"}
+**1. Team formation & governance**
+
+[Communication]{.subhead}
+
+[Slack]{.chip .freemium} [Discord]{.chip .free} [Zoom / Meet / Teams]{.chip .freemium}
+
+[Project management & docs]{.subhead}
+
+[Asana]{.chip .freemium} [Trello]{.chip .freemium} [ClickUp]{.chip .freemium} [STAPLE]{.chip .free} [Notion]{.chip .freemium}
+
+[People]{.subhead}
+
+[ORCID]{.chip .free} [tenzing]{.chip .open} [Airtable]{.chip .freemium} [World Time Buddy]{.chip .freemium}
+
+:::
+::: {.column width="50%"}
+**2. Study design & preregistration**
+
+[Registration]{.subhead}
+
+[OSF Registries]{.chip .free} [PreReg (ZPID)]{.chip .free} [ClinicalTrials.gov]{.chip .free} [PROSPERO]{.chip .free}
+
+[Power & planning]{.subhead}
+
+[G*Power]{.chip .free} [R (pwr, Superpower, simr, faux)]{.chip .open}
+
+:::
+::::
+
+::: {.legend}
+[open source]{.chip .open} [free]{.chip .free} [freemium]{.chip .freemium} [paid / institutional]{.chip .paid}
+:::
+
+::: notes
+Governance is about people as much as tools: roles, authorship policies, onboarding. The working group pointed out that the AsPredicted format isn't specific enough for many BTS projects, so we left it off.
+:::
+
+## Data {.tools}
+
+:::: {.columns}
+::: {.column width="33%"}
+**3. Infrastructure & management**
+
+[Repositories]{.subhead}
+
+[Zenodo]{.chip .open} [Dataverse]{.chip .open} [Databrary]{.chip .free} [ResearchBox]{.chip .free}
+
+[Version control]{.subhead}
+
+[GitHub / GitLab]{.chip .freemium}
+
+[Plans & standards]{.subhead}
+
+[DMPTool / DMPonline]{.chip .free} [BIDS]{.chip .open} [Psych-DS]{.chip .open}
+
+:::
+::: {.column width="33%"}
+**4. Collection & quality control**
+
+[Data collection]{.subhead}
+
+[Qualtrics]{.chip .paid} [REDCap]{.chip .paid} [formr]{.chip .open} [jsPsych]{.chip .open} [PsychoPy]{.chip .open} [JATOS]{.chip .open} [Gorilla]{.chip .paid} [Pavlovia]{.chip .paid}
+
+[Recruitment]{.subhead}
+
+[Prolific]{.chip .paid} [SONA]{.chip .paid} [Clickworker]{.chip .paid} [BeSample]{.chip .paid}
+
+:::
+::: {.column width="33%"}
+**5. Cleaning & curation**
+
+[Documentation]{.subhead}
+
+[Quarto / R Markdown]{.chip .open} [R codebook packages]{.chip .open} [Datapages]{.chip .open} [Observable]{.chip .open}
+
+[Validation]{.subhead}
+
+[ShinyValidator]{.chip .open} [Frictionless Data]{.chip .open} [OpenRefine]{.chip .open}
+
+:::
+::::
+
+::: {.legend}
+[open source]{.chip .open} [free]{.chip .free} [freemium]{.chip .freemium} [paid / institutional]{.chip .paid}
+:::
+
+::: notes
+The data stages are where multi-site projects feel the most pain: harmonizing across sites, naming conventions, data dictionaries. Validation tools like ShinyValidator and Frictionless catch problems before they reach the central dataset. R codebook packages include codebook and dataReporter.
+:::
+
+## Analysis {.tools}
+
+:::: {.columns}
+::: {.column width="50%"}
+**6. Statistical analysis & modelling**
+
+[Code-based]{.subhead}
+
+[R]{.chip .open} [Python]{.chip .open} [Julia]{.chip .open} [Stan]{.chip .open}
+
+[Point-and-click]{.subhead}
+
+[jamovi]{.chip .open} [JASP]{.chip .open} [SPSS]{.chip .paid}
+
+[Specialized]{.subhead}
+
+[Stata]{.chip .paid} [Mplus]{.chip .paid} [MATLAB]{.chip .paid} [SAS]{.chip .paid}
+
+[Shared computing]{.subhead}
+
+[Posit Cloud]{.chip .freemium} [Google Colab]{.chip .freemium} [JupyterHub]{.chip .open}
+
+:::
+::: {.column width="50%"}
+**7. Reproducibility & packaging**
+
+[Version control & archiving]{.subhead}
+
+[GitHub / GitLab]{.chip .freemium} [Zenodo]{.chip .open} [ResearchBox]{.chip .free}
+
+[Computing environments]{.subhead}
+
+[renv]{.chip .open} [conda]{.chip .open} [Docker]{.chip .open} [Apptainer]{.chip .open} [Binder]{.chip .open}
+
+[Reproducible documents & templates]{.subhead}
+
+[Markdown]{.chip .open} [Quarto]{.chip .open} [Jupyter]{.chip .open} [Code Ocean]{.chip .freemium}
+
+:::
+::::
+
+::: {.legend}
+[open source]{.chip .open} [free]{.chip .free} [freemium]{.chip .freemium} [paid / institutional]{.chip .paid}
+:::
+
+::: notes
+Plug the Zenodo + GitHub releases tutorial later today (16:30 UTC) for stage 7.
+:::
+
+## Outputs {.tools}
+
+:::: {.columns}
+::: {.column width="33%"}
+**8. Writing**
+
+[Collaborative writing]{.subhead}
+
+[Google Docs]{.chip .free} [Word]{.chip .paid} [HackMD]{.chip .freemium} [Overleaf]{.chip .freemium}
+
+[References & annotation]{.subhead}
+
+[Zotero]{.chip .open} [Mendeley]{.chip .freemium} [Hypothesis]{.chip .open}
+
+[Contributions]{.subhead}
+
+[CRediT]{.chip .free} [tenzing]{.chip .open}
+
+:::
+::: {.column width="33%"}
+**9. Publication & preprinting**
+
+[Preprints]{.subhead}
+
+[PsyArXiv]{.chip .free} [bioRxiv / medRxiv]{.chip .free} [SSRN]{.chip .free} [Field-specific]{.chip .free}
+
+[Choosing a journal]{.subhead}
+
+[JANE]{.chip .free} [DOAJ]{.chip .free} [TOP Factor]{.chip .free} [Open Policy Finder]{.chip .free}
+
+:::
+::: {.column width="33%"}
+**10. Dissemination & impact**
+
+[Identity & citations]{.subhead}
+
+[ORCID]{.chip .free} [Google Scholar]{.chip .free} [Scopus]{.chip .paid} [Web of Science]{.chip .paid}
+
+[Attention]{.subhead}
+
+[Altmetric]{.chip .freemium}
+
+[Post-publication]{.subhead}
+
+[PubPeer]{.chip .free} [Retraction Watch Database]{.chip .free}
+
+:::
+::::
+
+::: {.legend}
+[open source]{.chip .open} [free]{.chip .free} [freemium]{.chip .freemium} [paid / institutional]{.chip .paid}
+:::
+
+::: notes
+Choosing a journal: JANE matches your abstract to journals that publish similar work; DOAJ lists open access journals; TOP Factor rates journals' open science policies; Open Policy Finder (formerly Sherpa Romeo) shows publisher self-archiving and funder open access policies. The working group suggested looking beyond CRediT to other contributor taxonomies (e.g., ScoRo, TaDiRAH) and listing field-specific preprint servers. HackMD and the other writing tools are tomorrow's topic. Post-publication: the Retraction Watch Database is now free through Crossref. Shout-out to FORRT (a BTSCon organizer) and its Replication Database for checking whether findings have replicated.
+:::
+
+## The Glue: Tools That Show Up Everywhere
+
+::: {.glue}
+::: {.card}
+[💬]{.icon aria-hidden="true"}
+
+**Slack / Discord**
+
+Where the team actually talks
+:::
+::: {.card}
+[📝]{.icon aria-hidden="true"}
+
+**Google Docs / Word / HackMD**
+
+One shared doc, not 40 email attachments
+:::
+::: {.card}
+[🐙]{.icon aria-hidden="true"}
+
+**GitHub / GitLab**
+
+Every change, by everyone, forever
+:::
+::: {.card}
+[🧪]{.icon aria-hidden="true"}
+
+**Quarto / R Markdown**
+
+Code + text in one file
+:::
+::: {.card}
+[🔖]{.icon aria-hidden="true"}
+
+**Zenodo**
+
+A DOI for everything you make
+:::
+::: {.card}
+[🪪]{.icon aria-hidden="true"}
+
+**ORCID**
+
+So we know *which* J. Smith you are
+:::
+:::
+
+::: notes
+If your network only standardizes a few things, these are the ones to agree on early. OSF used to sit here across almost every stage; now that it mainly offers registries, that's exactly why the changes feel so disruptive.
+:::
+
+## The OSF Question
+
+OSF now mainly offers registries. What replaces everything else it used to do?
+
+| OSF function | Possible alternatives |
+|--------------|-----------------------|
+| Project hub / wiki | GitHub, STAPLE, HackMD, Notion |
+| File storage & sharing | Institutional storage, Dataverse, GitHub |
+| Archiving with a DOI | Zenodo, Dataverse, Figshare |
+| Preregistration | PreReg (ZPID), Zenodo (time-stamped), ClinicalTrials.gov, PROSPERO |
+| Preprints | PsyArXiv, field-specific servers, Zenodo |
+
+::: notes
+This came straight from the working group. Many networks are asking this right now.
+:::
+
+## Underused Tools We Want You to Know
+
+:::: {.columns}
+::: {.column width="50%"}
+- [**STAPLE**](https://staple.science/): project management built for research teams
+- [**ShinyValidator**](https://github.com/manybabies/ShinyValidator): checks that each site's dataset is in the right format so they can be combined
+- [**Psych-DS**](https://psychds-docs.readthedocs.io/): a community data standard for behavioral science datasets
+:::
+::: {.column width="50%"}
+- [**Datapages**](https://datapages.github.io/): templates for interactive dataset websites on GitHub Pages
+- [**ResearchBox**](https://researchbox.org/): one organized box per paper for open materials
+- [**HackMD**](https://hackmd.io/): collaborative markdown
+:::
+::::
+
+::: notes
+Overall message: there are many tools, and many good ones are under the radar. ShinyValidator, Datapages, and HackMD get the spotlight tomorrow.
+:::
+
+## Learn More This Week
+
+- **Day 2 (Wed Oct 7, 15:00–16:30 UTC):** tool spotlights on Datapages, HackMD, and ShinyValidator
+- **Zenodo + GitHub releases tutorial (today, 16:30 UTC):** archiving code and data with DOIs
+- **GitHub pre-conference workshop:** [watch the recording](https://youtu.be/GCKf3qF0a_0)
+- **Help build the map:** [the working group's HackMD doc](https://hackmd.io/K01UHojtQwa_f2H8eOCkqA)
+
+## Discussion
+
+1. What's **missing** from the map? Which tools do you swear by?
+2. What would you use to replace **OSF**?
+3. What **stops you** from adopting a new tool?
+4. Which tool would you want a **tutorial** on? Would you lead one?
+5. How should we **share** this map so it stays current?
+
+::: notes
+Collect answers in the chat or directly in the HackMD doc. Questions 3 and 4 feed directly into the working group's next steps.
+:::

@@ -1,0 +1,4 @@
+- source: workflow.qmd
+  quarto-pub:
+    - id: 85e763aa-8de1-47de-871b-3c98cf5b9fe3
+      url: https://doomlab.quarto.pub/tools-of-the-trade-the-big-team-science-workflow

@@ -1,0 +1,204 @@
+---
+title: "Beyond Google Docs"
+subtitle: "Collaborative writing with HackMD (and friends)"
+author: "Erin M. Buchanan & the CONNECT Tools and Infrastructure Working Group"
+date: "October 7, 2026"
+format:
+  revealjs:
+    theme: [default, btscon.scss]
+    slide-number: true
+    scrollable: true
+    preview-links: auto
+    footer: "BTSCon 2026 · CONNECT Tools & Infrastructure"
+    logo: https://bigteamscienceconference.github.io/assets/img/BTSCON.png
+---
+
+## Why Look Beyond Google Docs?
+
+From yesterday's survey of BTS researchers:
+
+- Strong **disdain for mega-corps** and a preference for **open source**
+- Worries about cost and **"adoption then enshittification"**
+- Frustration with tools that make it **impossible to collaborate across institutions**
+- Want **simultaneous editing *and* version history**
+
+::: {.callout-box}
+Google Docs works for a lot of people. But not every collaborator can or wants to use it.
+:::
+
+::: notes
+Not anti-Google: it's a low-barrier default. The point is to know what the options are when it doesn't fit your team.
+:::
+
+## What Is HackMD?
+
+:::: {.columns}
+::: {.column width="55%"}
+- A **real-time collaborative markdown editor** in the browser
+- Write on the left, see the formatted result on the right
+- Notes are plain text, so they're easy to move, version, and sync with GitHub
+- Our working group drafted the BTS workflow map in it
+:::
+::: {.column width="45%"}
+[hackmd.io](https://hackmd.io/)
+
+[TODO: screenshot of the split editor/preview view]{.todo}
+:::
+::::
+
+## Markdown in 60 Seconds
+
+:::: {.columns}
+::: {.column width="50%"}
+**You type:**
+
+```markdown
+# A heading
+## A smaller heading
+
+*italics* and **bold**
+
+- a bullet
+- another bullet
+
+> a quote
+
+| Task | Tool |
+|------|------|
+| Writing | HackMD |
+```
+:::
+::: {.column width="50%"}
+**You see:**
+
+[A heading]{style="font-size:1.4em; font-weight:700; color:#1f3a5f"}
+
+[A smaller heading]{style="font-size:1.1em; font-weight:700; color:#1f3a5f"}
+
+*italics* and **bold**
+
+- a bullet
+- another bullet
+
+> a quote
+
+| Task | Tool |
+|------|------|
+| Writing | HackMD |
+:::
+::::
+
+::: notes
+Markdown is part of the "hidden curriculum": a general skill you pick up once and then use everywhere (GitHub, Quarto, Slack, Discord, many note apps).
+:::
+
+## Features That Help Big Teams
+
+:::: {.columns}
+::: {.column width="50%"}
+- **Live co-editing** with everyone's cursor visible
+- **Comments** and named notes inline
+- **Version history** to go back in time
+- **Tables, images, and diagrams** (Mermaid)
+:::
+::: {.column width="50%"}
+- **GitHub sync** to push notes to a repo
+- **Templates** for agendas and protocols
+- **Books** that link notes into one guide
+- **Slide mode** to present straight from a note
+:::
+::::
+
+## A Real Example: Our Workflow Doc
+
+```markdown
+### Stage 2 — Study Design & Pre-Registration
+
+> [name=steven verheyen] In the Dutch Open Science Community,
+> AsPredicted is very much frowned upon because it isn't
+> specific enough.
+
+| Tool | Category | Pricing | Notes |
+|------|----------|---------|-------|
+| OSF Registries | Preregistration | Free | ... |
+```
+
+- `[name=...]` tags each comment with who said it
+- The whole working group edited one doc, with no "final_v3_REAL.docx"
+
+[Open the doc](https://hackmd.io/K01UHojtQwa_f2H8eOCkqA)
+
+## What's Free and What Isn't?
+
+| | Free | Prime ($5/seat/month, billed annually) |
+|---|---|---|
+| Private notes | Yes | Yes |
+| Invited editors per note | 3 | Unlimited |
+| Team workspace | Up to 3 people | Unlimited seats |
+| Version history | Last 10 versions | Unlimited |
+| GitHub sync | 20 pushes/month | Unlimited |
+| Comments | Yes | Yes |
+| Full-text search, PDF export | No | Yes |
+
+[Source: [hackmd.io/pricing](https://hackmd.io/pricing), checked October 2026]{.small}
+
+::: notes
+Answers the working group's question "can't do private stuff without paying?": private notes are free. The limit is the number of *invited* editors (3) and team size. For bigger groups, set the note's write permission to signed-in users and share the link. Demo this live.
+:::
+
+## Live Demo
+
+[TODO: demo steps]{.todo}
+
+1. Create a note and invite a collaborator
+2. Set read/write permissions
+3. Add a comment and a table
+4. Look at version history
+5. Push to GitHub
+
+# Alternatives {background-color="#1f3a5f"}
+
+## Other Ways to Write Together
+
+| Tool | Best for | Open source? | Cost |
+|------|----------|--------------|------|
+| [HedgeDoc](https://hedgedoc.org/) | HackMD-style markdown you host yourself | Yes | Free (self-hosted) |
+| [CryptPad](https://cryptpad.org/) | End-to-end encrypted docs, sheets, and markdown | Yes | Free 1 GB account; paid plans; self-host |
+| [Etherpad](https://etherpad.org/) | Lightweight real-time text editing | Yes | Free (self-hosted) |
+| [Proton Docs](https://proton.me/drive/docs) | Encrypted rich-text docs that open .docx | No | Free with a Proton account |
+| [ONLYOFFICE](https://www.onlyoffice.com/) / [Collabora](https://www.collaboraonline.com/) | Word-like editing, often via Nextcloud | Yes | Free community editions; often institutional |
+| [Overleaf](https://www.overleaf.com/) | LaTeX manuscripts | Partly | Free plan: 1 collaborator per project |
+| Word online | Track changes, journal formatting | No | Usually institutional |
+| [Quarto](https://quarto.org/) + GitHub | Reproducible manuscripts with code | Yes | Free |
+
+::: notes
+HedgeDoc is the open-source cousin of HackMD (they share a code history), so it's the closest match if your institution can host it.
+:::
+
+## Which One Should My Team Use?
+
+- Do you need **tracked changes and journal formatting**? → Word, ONLYOFFICE, or Collabora
+- Is **privacy** essential, or are some collaborators unable to use Google? → CryptPad or Proton Docs
+- Is your team **comfortable with markdown and GitHub**? → HackMD or HedgeDoc
+- Are you writing a **LaTeX** paper? → Overleaf
+- Do you want **code and text in one place**? → Quarto + GitHub
+
+::: {.callout-box}
+Pick the tool your *least technical* collaborator can use.
+:::
+
+## Tips for Big Team Writing
+
+- Keep **one source of truth**: draft in one place, finalize in one place
+- **Draft in HackMD, finalize elsewhere**: move to Word or Quarto for journal formatting
+- Use **comments for discussion**, not edits on top of other people's text
+- Record contributions as you go with CRediT
+- Put the link in **every meeting agenda** so nobody has to hunt for the document
+
+## Try It
+
+- Sign up: [hackmd.io](https://hackmd.io/)
+- Add a comment to our workflow map: [hackmd.io/K01UHojtQwa_f2H8eOCkqA](https://hackmd.io/K01UHojtQwa_f2H8eOCkqA)
+- Tell us what your team uses, and what you wish existed
+
+[TODO: discussion questions / Q&A]{.todo}

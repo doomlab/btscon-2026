@@ -1,0 +1,14 @@
+# local / OS
+.DS_Store
+.claude/
+.quarto/
+.Rhistory
+~$*
+
+# not ours to share, or internal
+*.pptx
+*.docx
+*(original).md
+
+# local preview of the HackMD doc
+02-tools/Tools-+-Infrastructure-CONNECT.html

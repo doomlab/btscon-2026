@@ -1,0 +1,4 @@
+- source: welcome.qmd
+  quarto-pub:
+    - id: 44ef092d-ef48-4cce-b188-06b7cc623af6
+      url: https://doomlab.quarto.pub/welcome-to-btscon-2026
