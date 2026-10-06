@@ -90,6 +90,32 @@ Version DOI
 Which DOI to cite: the version DOI when you need the exact files (e.g., the analysis in a paper); the concept DOI when you mean "this project, whatever the latest is." Files in a published version can't be changed; that's the point.
 :::
 
+## Key Idea: Locked Files, Editable Descriptions
+
+:::: {.flow}
+::: {.step .navy}
+**Files: locked** 🔒
+
+After you publish, files can't be added, removed, or swapped. New files = new version.
+:::
+
+::: {.step .gold}
+**Description: editable** ✏️
+
+Fix the title, authors, description, or links any time, with no new version needed.
+:::
+::::
+
+Why that's good:
+
+- Preregistrations and protocols get a permanent timestamp
+- Every version stays exactly as it was, so changes are traceable
+- The description grows with the project: add the paper, data, and code links later
+
+::: notes
+Fixing a typo in the title or adding an author doesn't need a new version. If someone uploads sensitive data by mistake, contact Zenodo support; they can help in exceptional cases. For preregistrations specifically, the locked files are the whole point: reviewers can check the plan against the paper.
+:::
+
 ## Key Idea: Access Options
 
 Choose who can download the files:
