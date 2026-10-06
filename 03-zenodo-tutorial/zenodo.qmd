@@ -149,6 +149,42 @@ The description is always public, even when the files aren't.
 Restricted is useful for sensitive data in multi-site projects: the record is findable and citable, but you control who gets the files. Pick a license too (e.g., CC-BY 4.0 for data and materials, MIT for code).
 :::
 
+## Share Links for Peer Review {.compact}
+
+Give reviewers access without making anything public:
+
+:::: {.flow}
+::: {.step}
+**Can view**
+
+Restricted or embargoed files of a published record
+:::
+
+::: {.step .gold}
+**Can preview draft**
+
+A record you haven't published yet
+:::
+
+::: {.step .pink}
+**Can edit**
+
+Collaborators who help fill in the draft
+:::
+::::
+
+1. Open your record or draft and click Share
+2. Go to the Links tab
+3. Optional: add a title and an expiration date
+4. Pick the permission, then click Create a new link
+5. Copy the link and send it (e.g., in your journal submission)
+
+Delete the link from the same tab whenever you want to turn off access.
+
+::: notes
+A link works for all current and future versions of the record. For a journal submission, a "Can preview draft" link lets reviewers see the materials before you publish; once the paper is accepted, publish the record and its DOI goes live. Set an expiration date so access doesn't linger.
+:::
+
 ## Practice First: The Sandbox
 
 - [sandbox.zenodo.org](https://sandbox.zenodo.org/) is a full copy of Zenodo just for testing
@@ -237,16 +273,6 @@ Add links as they appear: when the paper is published, edit the record and add i
 ::: notes
 Zenodo passes these links to DataCite along with the DOI, so indexes and other services can connect your outputs: someone who finds the paper can find the data, and vice versa. Do it in both directions where you can: put the data DOI in the paper's data availability statement, and the paper DOI in the data record. This is where the editable-description idea pays off.
 :::
-
-## Live Demo: Upload
-
-[TODO: demo files to upload, e.g., a study protocol PDF and a data dictionary]{.todo}
-
-1. Log in to the sandbox
-2. Go to My dashboard → New upload, and add the files
-3. Add creators with ORCIDs
-4. Publish and look at the DOI
-5. Make a new version of the record
 
 # Route 2: Archive a GitHub Release {background-color="#1f3a5f"}
 
