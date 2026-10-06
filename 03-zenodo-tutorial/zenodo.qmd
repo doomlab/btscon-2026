@@ -35,20 +35,15 @@ Roughly 55 minutes of content with 30 minutes for Q&A. If demos run long, cut th
 
 ## What Is Zenodo?
 
-:::: {.columns}
-::: {.column width="55%"}
 - A general-purpose repository run by **CERN**
 - **Free** to use, and the software is **open source** (InvenioRDM)
 - Accepts **any research output**: data, code, slides, posters, protocols, preprints
 - Up to **50 GB and 100 files** per record
 - Every record gets a **DOI**
-:::
-::: {.column width="45%"}
-[zenodo.org](https://zenodo.org/)
 
-Log in with **ORCID**, **GitHub**, or an email account
+::: {.callout-box}
+[zenodo.org](https://zenodo.org/): log in with **ORCID**, **GitHub**, or an email account
 :::
-::::
 
 ::: notes
 Point out that you can sign in with ORCID or GitHub, which saves creating yet another account. A one-time increase to 200 GB per record can be requested if needed.
