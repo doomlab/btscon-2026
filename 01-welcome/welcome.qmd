@@ -3,6 +3,7 @@ title: "Welcome to BTSCon 2026"
 subtitle: "The 5th Annual Big Team Science Conference"
 author: "Erin M. Buchanan"
 date: "October 6, 2026"
+date-format: long
 format:
   revealjs:
     theme: [default, btscon.scss]

@@ -96,7 +96,7 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="zenodo_files/libs/revealjs/dist/theme/quarto-343a67f4ba0c0b531c39ecff067d870d.css">
+  <link rel="stylesheet" href="zenodo_files/libs/revealjs/dist/theme/quarto-c041a141a67afca1b5cd1676af6d9062.css">
   <link href="zenodo_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="zenodo_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="zenodo_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -206,7 +206,7 @@ Erin M. Buchanan
 </div>
 </div>
 
-  <p class="date">2026-10-06</p>
+  <p class="date">October 6, 2026</p>
 </section>
 <section id="plan-for-today" class="slide level2">
 <h2>Plan for Today</h2>
@@ -386,23 +386,52 @@ Erin M. Buchanan
 <h1>Route 1: Upload Directly</h1>
 
 </section>
-<section id="uploading-files-step-by-step" class="slide level2 scrollable">
-<h2>Uploading Files, Step by Step</h2>
+<section id="upload-basic-information" class="slide level2 compact scrollable">
+<h2>Upload: Basic Information</h2>
 <ol type="1">
 <li>Go to My dashboard (top menu), then click New upload</li>
-<li>Drag in your files</li>
-<li>Answer “Do you already have a DOI?” → No (Zenodo reserves one for you)</li>
-<li>Fill in the description:
+<li>Files: drag in your files</li>
+<li>Basic information:
 <ul>
-<li>Resource type (dataset, software, presentation…)</li>
-<li>Title, creators (with ORCIDs), description</li>
-<li>License</li>
+<li>Digital Object Identifier: “Do you already have a DOI?” → No</li>
+<li>Resource type: dataset, software, presentation…</li>
+<li>Title and publication date</li>
+<li>Creators: everyone in the citation, with ORCIDs</li>
+<li>Description: what’s in the files and how to use them</li>
+<li>Licenses: CC BY 4.0 by default. Help choosing: <a href="https://creativecommons.org/chooser/">Creative Commons chooser</a> or <a href="https://choosealicense.com/">choosealicense.com</a> for code</li>
 </ul></li>
-<li>Choose access (open, restricted, embargoed)</li>
-<li>Publish</li>
 </ol>
 <aside class="notes">
-<p>Warn the audience: once you publish, you can’t swap the files. Double-check before publishing, or make a new version.</p>
+<p>Once you publish, you can’t swap the files. Double-check before publishing, or make a new version. CC BY 4.0 is a good default for data and materials; MIT is common for code.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="upload-recommended-info-related-works" class="slide level2 compact scrollable">
+<h2>Upload: Recommended Info &amp; Related Works</h2>
+<ol start="4" type="1">
+<li>Recommended information:
+<ul>
+<li>Contributors: helped, but not in the citation. Each needs a role (e.g., data collector)</li>
+<li>Keywords and subjects: your own, or from EuroSciVoc or MeSH</li>
+<li>Languages, version, and publisher</li>
+</ul></li>
+<li>Related works: link the paper, preprint, preregistration, or repo
+<ul>
+<li>Pick a relation (e.g., “Is supplement to”) and paste the DOI or URL</li>
+</ul></li>
+<li>Choose access (open, restricted, embargoed), then Publish</li>
+</ol>
+<aside class="notes">
+<p>Creators vs contributors for big teams: creators are the author list that shows up when someone cites the record; contributors get credit on the record page but not in the citation (e.g., site research assistants, translators). Contributor roles come from the DataCite vocabulary. Related works are what tie a project together: the data record “Is supplement to” the paper, the code “Is supplement to” the data, and so on.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;

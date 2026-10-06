@@ -3,6 +3,7 @@ title: "Beyond Google Docs"
 subtitle: "Collaborative writing with HackMD (and friends)"
 author: "Erin M. Buchanan & the CONNECT Tools and Infrastructure Working Group"
 date: "October 7, 2026"
+date-format: long
 format:
   revealjs:
     theme: [default, btscon.scss]

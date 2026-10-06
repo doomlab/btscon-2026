@@ -3,6 +3,7 @@ title: "Tools of the Trade: The Big Team Science Workflow"
 subtitle: "Mapping tools onto each stage of a BTS project"
 author: "Erin M. Buchanan & the CONNECT Tools and Infrastructure Working Group"
 date: "October 6, 2026"
+date-format: long
 format:
   revealjs:
     theme: [default, btscon.scss]

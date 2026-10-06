@@ -11,7 +11,13 @@ All slide decks are [Quarto](https://quarto.org/) reveal.js presentations. Open 
 | `01-welcome/` | Welcome to BTSCon 2026 | [`welcome.html`](01-welcome/welcome.html) · [online](https://doomlab.quarto.pub/welcome-to-btscon-2026) |
 | `02-tools/tools-talk-1/` | Tools of the Trade: The Big Team Science Workflow (Day 1) | [`workflow.html`](02-tools/tools-talk-1/workflow.html) |
 | `02-tools/tools-talk-2/` | Beyond Google Docs: Collaborative Writing with HackMD (Day 2) | [`hackmd.html`](02-tools/tools-talk-2/hackmd.html) |
-| `03-zenodo-tutorial/` | Archive It with Zenodo (with GitHub releases) | [`zenodo.html`](03-zenodo-tutorial/zenodo.html) |
+| `03-zenodo-tutorial/` | Archive It with Zenodo (with GitHub releases) | [`zenodo.html`](03-zenodo-tutorial/zenodo.html) · [`zenodo.pdf`](03-zenodo-tutorial/zenodo.pdf) |
+
+To make a one-file PDF of any deck (needs Google Chrome and Node 22+):
+
+```bash
+node scripts/print-pdf.mjs 03-zenodo-tutorial/zenodo.html
+```
 
 Also included:
 
